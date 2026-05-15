@@ -1,0 +1,58 @@
+{
+  "name": "unocss-preset-motion",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "UnoCSS preset for View Transitions and Scroll-Driven Animations",
+  "author": "ManUtopiK",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManUtopiK/unocss-preset-motion.git"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "view-transitions",
+    "scroll-driven-animations",
+    "animation-timeline",
+    "css",
+    "motion"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "play": "pnpm -C playground dev",
+    "play:build": "pnpm -C playground build",
+    "release": "pnpm build && changeset publish"
+  },
+  "peerDependencies": {
+    "unocss": ">=0.60.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.12.0",
+    "@changesets/cli": "^2.27.10",
+    "@unocss/core": "^0.65.0",
+    "@unocss/preset-mini": "^0.65.0",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "unocss": "^0.65.0",
+    "vitest": "^2.1.8"
+  }
+}

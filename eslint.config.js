@@ -1,0 +1,6 @@
+import antfu from '@antfu/eslint-config'
+
+export default antfu({
+  type: 'lib',
+  ignores: ['dist', 'playground/dist', '**/__snapshots__/**'],
+})
