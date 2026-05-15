@@ -11,9 +11,6 @@ import NamedTimelineDemo from './components/NamedTimelineDemo.vue'
     <header>
       <h1 class="text-4xl font-bold vt-name-[page-title]">unocss-preset-motion</h1>
       <p class="text-gray-600 mt-2">View Transitions + Scroll-Driven Animations demos</p>
-      <nav class="flex gap-4 mt-4">
-        <RouterLink to="/" class="text-blue-600 underline">List</RouterLink>
-      </nav>
     </header>
 
     <RouterView />

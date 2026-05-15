@@ -1,10 +1,29 @@
+<script setup lang="ts">
+const items = Array.from({ length: 8 }, (_, i) => i + 1)
+</script>
+
 <template>
-  <section class="view-timeline-hero h-96 bg-gradient-to-b from-purple-200 to-pink-200 rounded-lg p-8 relative">
-    <h3 class="text-xl font-semibold">Hero section</h3>
-    <div
-      class="absolute bottom-4 left-4 right-4 p-4 bg-white/80 rounded opacity-0 animate-fade-in animate-fill-mode-both timeline-hero anim-range-cover"
-    >
-      I animate based on the parent's named view timeline.
+  <div class="timeline-scope-gallery space-y-4">
+    <p class="text-sm text-gray-600">
+      Scroll the gallery horizontally → the progress bar below is driven by the gallery's <code>scroll-timeline</code>,
+      not by its own viewport position. <code>timeline-scope</code> on the parent exposes the timeline name to the sibling.
+    </p>
+
+    <div class="scroll-timeline-gallery scroll-timeline-axis-x overflow-x-auto flex gap-4 p-4 bg-gray-100 rounded-lg">
+      <div
+        v-for="i in items"
+        :key="i"
+        class="shrink-0 w-64 h-40 rounded-lg flex items-center justify-center text-2xl font-bold text-white"
+        :style="{ background: `hsl(${i * 40} 70% 55%)` }"
+      >
+        {{ i }} / {{ items.length }}
+      </div>
     </div>
-  </section>
+
+    <div class="h-3 w-full bg-gray-200 rounded-full overflow-hidden">
+      <div
+        class="h-full w-full bg-purple-500 origin-left scale-x-0 animate-grow-x animate-fill-mode-both timeline-gallery anim-range-cover"
+      />
+    </div>
+  </div>
 </template>
