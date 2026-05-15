@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import NamedTimelineDemo from './components/NamedTimelineDemo.vue'
 import ScrollFadeInDemo from './components/ScrollFadeInDemo.vue'
 import ScrollProgressDemo from './components/ScrollProgressDemo.vue'
-import NamedTimelineDemo from './components/NamedTimelineDemo.vue'
+import ScrollRevealDemo from './components/ScrollRevealDemo.vue'
 </script>
 
 <template>
@@ -18,6 +19,11 @@ import NamedTimelineDemo from './components/NamedTimelineDemo.vue'
     <section>
       <h2 class="text-2xl font-semibold mb-4">Scroll fade-in</h2>
       <ScrollFadeInDemo />
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Scroll reveal (fade + translate up)</h2>
+      <ScrollRevealDemo />
     </section>
 
     <section>
