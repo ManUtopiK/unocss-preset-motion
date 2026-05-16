@@ -6,6 +6,8 @@
 
 UnoCSS preset for modern CSS motion APIs — **View Transitions** and **Scroll-Driven Animations**, in a single tree-shakeable package.
 
+📖 **[Documentation & live demos →](https://manutopik.github.io/unocss-preset-motion/)**
+
 ## Install
 
 ```bash
@@ -148,12 +150,15 @@ defineConfig({
 - **View Transitions API**: supported in all evergreen browsers for same-document transitions. See [caniuse](https://caniuse.com/view-transitions).
 - **Scroll-Driven Animations**: Chrome 115+. Firefox and Safari behind flags as of writing. See [caniuse](https://caniuse.com/css-scroll-timeline).
 
-## Playground
+## Docs & playground
 
-```bash
-pnpm i
-pnpm play
-```
+- Full documentation with live demos: **https://manutopik.github.io/unocss-preset-motion/**
+- Run the local Vue playground:
+
+  ```bash
+  pnpm i
+  pnpm play
+  ```
 
 ## Contributing
 
