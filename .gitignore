@@ -6,3 +6,5 @@ coverage
 .vite
 .turbo
 playground/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
