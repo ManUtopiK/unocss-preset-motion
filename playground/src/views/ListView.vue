@@ -21,7 +21,7 @@ function navigate(id: number) {
       <button
         v-for="card in cards"
         :key="card.id"
-        class="rounded-lg overflow-hidden text-left hover:scale-105 transition"
+        class="rounded-lg overflow-hidden text-left bg-white shadow-md hover:shadow-lg hover:scale-105 transition"
         @click="navigate(card.id)"
       >
         <div
