@@ -12,8 +12,6 @@ Fade-and-translate-up effect as the element enters the viewport — the canonica
 </div>
 ```
 
-<ScrollRevealDemo />
-
 ```ts [uno.config.ts]
 import { defineConfig, presetWind3 } from 'unocss'
 import presetMotion from 'unocss-preset-motion'
@@ -32,6 +30,8 @@ export default defineConfig({
   },
 })
 ```
+
+<ScrollRevealDemo />
 
 ## How it works
 
