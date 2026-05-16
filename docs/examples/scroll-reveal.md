@@ -4,8 +4,6 @@ Fade-and-translate-up effect as the element enters the viewport — the canonica
 
 ## Live demo
 
-<ScrollRevealDemo />
-
 ```html
 <div class="opacity-0 translate-y-12
             animate-fade-up animate-fill-mode-both
@@ -13,6 +11,8 @@ Fade-and-translate-up effect as the element enters the viewport — the canonica
   Reveal me.
 </div>
 ```
+
+<ScrollRevealDemo />
 
 ```ts [uno.config.ts]
 import { defineConfig, presetWind3 } from 'unocss'
