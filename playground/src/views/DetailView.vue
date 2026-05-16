@@ -13,7 +13,9 @@ function back() {
 
 <template>
   <section>
-    <button class="text-blue-600 underline mb-4" @click="back">← Back</button>
+    <button class="text-blue-600 underline mb-4" @click="back">
+      ← Back
+    </button>
     <div
       class="h-64 rounded-lg"
       :style="{ background: `hsl(${hue} 70% 60%)`, viewTransitionName: `card-${id}-image` }"

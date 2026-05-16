@@ -1,7 +1,7 @@
 {
   "name": "unocss-preset-motion",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "UnoCSS preset for View Transitions and Scroll-Driven Animations",
   "author": "ManUtopiK",
   "license": "MIT",

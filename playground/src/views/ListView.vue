@@ -16,7 +16,9 @@ function navigate(id: number) {
 
 <template>
   <section>
-    <h2 class="text-2xl font-semibold mb-4">View Transition list → detail</h2>
+    <h2 class="text-2xl font-semibold mb-4">
+      View Transition list → detail
+    </h2>
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
       <button
         v-for="card in cards"

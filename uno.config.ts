@@ -1,5 +1,5 @@
-import presetMotion from './src'
 import { defineConfig, presetWind } from 'unocss'
+import presetMotion from './src'
 
 export default defineConfig({
   presets: [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const cards = Array.from({ length: 6 }, (_, i) => ({
   id: i + 1,

@@ -9,7 +9,9 @@ const items = [
 
 <template>
   <div class="demo">
-    <p class="demo-hint">Scroll past the cards below to see the effect.</p>
+    <p class="demo-hint">
+      Scroll past the cards below to see the effect.
+    </p>
     <div class="space-y-6">
       <div
         v-for="item in items"
@@ -19,8 +21,12 @@ const items = [
                animate-fade-up animate-fill-mode-both
                timeline-view anim-range-[entry_0%_cover_25%]"
       >
-        <h4 class="text-lg font-semibold m-0">{{ item.title }}</h4>
-        <p class="mt-2 mb-0 text-gray-600">{{ item.body }}</p>
+        <h4 class="text-lg font-semibold m-0">
+          {{ item.title }}
+        </h4>
+        <p class="mt-2 mb-0 text-gray-600">
+          {{ item.body }}
+        </p>
       </div>
     </div>
   </div>

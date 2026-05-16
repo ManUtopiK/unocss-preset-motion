@@ -14,16 +14,18 @@ A thin bar fixed to the top of the page that fills as the user scrolls.
 ```
 
 ```ts [uno.config.ts]
-theme: {
-  animation: {
-    keyframes: {
-      'grow-x': '{from{transform:scaleX(0)}to{transform:scaleX(1)}}',
+export default defineConfig({
+  theme: {
+    animation: {
+      keyframes: {
+        'grow-x': '{from{transform:scaleX(0)}to{transform:scaleX(1)}}',
+      },
+      durations: { 'grow-x': '1s' }, // ignored when bound to a timeline
+      timingFns: { 'grow-x': 'linear' },
+      counts: { 'grow-x': '1' },
     },
-    durations: { 'grow-x': '1s' }, // ignored when bound to a timeline
-    timingFns: { 'grow-x': 'linear' },
-    counts:    { 'grow-x': '1' },
   },
-}
+})
 ```
 
 ## Notes

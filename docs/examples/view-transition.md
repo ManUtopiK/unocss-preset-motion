@@ -30,7 +30,9 @@ For dynamic values like `card-${id}-image`, prefer binding via `:style` because 
 <div class="h-64 rounded-lg" :style="{
       background: `hsl(${hue} 70% 60%)`,
       viewTransitionName: `card-${id}-image`,
-    }" />
+    }"
+/>
+
 <div class="p-4 text-2xl font-semibold" :style="{ viewTransitionName: `card-${id}-title` }">
   Card {{ id }}
 </div>
