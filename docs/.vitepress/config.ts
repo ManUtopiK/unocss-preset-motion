@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'unocss-preset-motion',
   description: 'UnoCSS preset for View Transitions and Scroll-Driven Animations',
+  base: '/unocss-preset-motion/',
   lastUpdated: true,
   cleanUrls: true,
 
